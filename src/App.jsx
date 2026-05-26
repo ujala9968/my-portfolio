@@ -337,8 +337,27 @@ export default function App() {
 
   </div>
 </section>
-          {/* Certificates */}
+          
 {/* Certificates */}
+import React from 'react';
+const certificates = [
+  {
+    title: "Programming Fundamentals",
+    file: "/certificates/programming.pdf",
+  },
+  {
+    title: "Web Development",
+    file: "/certificates/webdev.pdf",
+  },
+  {
+    title: "Machine Learning Basics",
+    file: "/certificates/ml.pdf",
+  },
+  {
+    title: "React JS Certificate",
+    file: "/certificates/reactjs.pdf",
+  },
+];
 <section
   id="certificates"
   className="px-6 md:px-10 py-24"
@@ -347,42 +366,25 @@ export default function App() {
     Certificates
   </h2>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+  <div className="grid md:grid-cols-2 gap-8 mt-10">
+  {certificates.map((cert, index) => (
+    <a
+      key={index}
+      href={cert.file}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-zinc-900/70 border border-zinc-700 rounded-3xl p-8 hover:scale-105 transition duration-300"
+    >
+      <h3 className="text-cyan-400 text-2xl font-bold">
+        {cert.title}
+      </h3>
 
-    {[
-      {
-        name: "Programming Fundamentals",
-        img: "/certificates/c1.jpg"
-      },
-      {
-        name: "Web Development",
-        img: "/certificates/c2.jpg"
-      },
-      {
-        name: "Machine Learning Basics",
-        img: "/certificates/c3.jpg"
-      },
-      {
-        name: "React JS Certificate",
-        img: "/certificates/c4.jpg"
-      }
-    ].map((cert, i) => (
-      <div
-        key={i}
-        onClick={() => setSelectedCert(cert.img)}
-        className="cursor-pointer bg-white/10 backdrop-blur-lg border border-white/10 p-6 rounded-3xl hover:-translate-y-2 hover:shadow-cyan-500/30 transition"
-      >
-        <h3 className="text-xl font-semibold text-cyan-300">
-          {cert.name}
-        </h3>
-
-        <p className="text-gray-400 mt-2">
-          Click to preview certificate
-        </p>
-      </div>
-    ))}
-
-  </div>
+      <p className="text-gray-400 mt-4">
+        Click to preview certificate
+      </p>
+    </a>
+  ))}
+</div>
 </section>
 
       {/* Contact */}
