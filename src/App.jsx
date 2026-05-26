@@ -106,7 +106,7 @@ export default function App() {
         <div className="flex flex-wrap gap-5 justify-center">
 
           <a
-            href="/resume.pdf"
+            href="/resumenew.pdf"
             download="Ujala_Saroj_Resume.pdf"
             className="bg-cyan-500 hover:bg-cyan-400 text-black px-8 py-4 rounded-2xl font-semibold transition hover:scale-105 shadow-lg shadow-cyan-500/30"
           >
