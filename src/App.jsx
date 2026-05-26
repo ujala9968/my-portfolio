@@ -425,38 +425,6 @@ export default function App() {
         </div>
 
       </section>
-      {/* Certificates */}
-<section
-  id="certificates"
-  className="px-6 md:px-10 py-24"
->
-  <h2 className="text-5xl font-bold text-center text-cyan-400 mb-16">
-    Certificates
-  </h2>
-
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-
-    {[
-      "Python Programming Certificate",
-      "Web Development Certificate",
-      "Machine Learning Basics",
-      "React.js Certification"
-    ].map((cert, i) => (
-      <div
-        key={i}
-        className="bg-white/10 backdrop-blur-lg border border-white/10 p-6 rounded-3xl hover:-translate-y-2 hover:shadow-purple-500/30 transition"
-      >
-        <h3 className="text-xl font-semibold text-cyan-300">
-          {cert}
-        </h3>
-        <p className="text-gray-400 mt-2">
-          Issued by: Add Platform (Coursera / Udemy / College etc.)
-        </p>
-      </div>
-    ))}
-
-  </div>
-</section>
 
       {/* Footer */}
       <footer className="border-t border-white/10 text-center py-8 text-gray-400">
