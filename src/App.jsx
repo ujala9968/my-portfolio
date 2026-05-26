@@ -51,7 +51,7 @@ export default function App() {
       <nav className="flex justify-between items-center px-6 md:px-10 py-5 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">
 
         <h1 className="text-3xl font-bold text-cyan-400">
-          Ujala
+          Ujala Saroj
         </h1>
 
         <div className="flex gap-4 md:gap-6 text-sm md:text-base">
