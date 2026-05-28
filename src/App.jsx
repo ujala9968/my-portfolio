@@ -307,8 +307,94 @@ export default function App() {
           ))}
 
         </div>
-
       </section>
+      {/* Certificates */}
+<section
+  id="certificates"
+  className="px-6 md:px-10 py-24"
+>
+
+  <h2 className="text-5xl font-bold text-center text-cyan-400 mb-16">
+    Certificates
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    {/* Certificate 1 */}
+    <div className="bg-white/10 backdrop-blur-lg border border-white/10 p-8 rounded-3xl hover:shadow-cyan-500/30 hover:shadow-2xl transition duration-500">
+
+      <h3 className="text-2xl font-bold mb-4 text-cyan-300">
+        AI & ML Certificate
+      </h3>
+
+      <a
+        href="/aiml.pdf"
+        target="_blank"
+        rel="noreferrer"
+        className="text-cyan-400 hover:underline"
+      >
+        View Certificate →
+      </a>
+
+    </div>
+
+    {/* Certificate 2 */}
+    <div className="bg-white/10 backdrop-blur-lg border border-white/10 p-8 rounded-3xl hover:shadow-purple-500/30 hover:shadow-2xl transition duration-500">
+
+      <h3 className="text-2xl font-bold mb-4 text-cyan-300">
+        FastAPI Certificate
+      </h3>
+
+      <a
+        href="/api.pdf"
+        target="_blank"
+        rel="noreferrer"
+        className="text-cyan-400 hover:underline"
+      >
+        View Certificate →
+      </a>
+
+    </div>
+
+    {/* Certificate 3 */}
+    <div className="bg-white/10 backdrop-blur-lg border border-white/10 p-8 rounded-3xl hover:shadow-green-500/30 hover:shadow-2xl transition duration-500">
+
+      <h3 className="text-2xl font-bold mb-4 text-cyan-300">
+        Database Certificate
+      </h3>
+
+      <a
+        href="/database.pdf"
+        target="_blank"
+        rel="noreferrer"
+        className="text-cyan-400 hover:underline"
+      >
+        View Certificate →
+      </a>
+
+    </div>
+
+    {/* Certificate 4 */}
+    <div className="bg-white/10 backdrop-blur-lg border border-white/10 p-8 rounded-3xl hover:shadow-pink-500/30 hover:shadow-2xl transition duration-500">
+
+      <h3 className="text-2xl font-bold mb-4 text-cyan-300">
+        React JS Certificate
+      </h3>
+
+      <a
+        href="/reactjs.pdf"
+        target="_blank"
+        rel="noreferrer"
+        className="text-cyan-400 hover:underline"
+      >
+        View Certificate →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
       {/* Education */}
 <section
   id="education"
@@ -338,54 +424,7 @@ export default function App() {
   </div>
 </section>
           
-{/* Certificates */}
-import React from 'react';
-const certificates = [
-  {
-    title: "Programming Fundamentals",
-    file: "/certificates/programming.pdf",
-  },
-  {
-    title: "Web Development",
-    file: "/certificates/webdev.pdf",
-  },
-  {
-    title: "Machine Learning Basics",
-    file: "/certificates/ml.pdf",
-  },
-  {
-    title: "React JS Certificate",
-    file: "/certificates/reactjs.pdf",
-  },
-];
-<section
-  id="certificates"
-  className="px-6 md:px-10 py-24"
->
-  <h2 className="text-5xl font-bold text-center text-cyan-400 mb-16">
-    Certificates
-  </h2>
 
-  <div className="grid md:grid-cols-2 gap-8 mt-10">
-  {certificates.map((cert, index) => (
-    <a
-      key={index}
-      href={cert.file}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-zinc-900/70 border border-zinc-700 rounded-3xl p-8 hover:scale-105 transition duration-300"
-    >
-      <h3 className="text-cyan-400 text-2xl font-bold">
-        {cert.title}
-      </h3>
-
-      <p className="text-gray-400 mt-4">
-        Click to preview certificate
-      </p>
-    </a>
-  ))}
-</div>
-</section>
 
       {/* Contact */}
       <section
