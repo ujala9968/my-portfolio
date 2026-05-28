@@ -278,7 +278,7 @@ export default function App() {
 
       </section>
 
-      {/* Skills */}
+      
 {/* Skills */}
 <section
   id="skills"
