@@ -67,7 +67,7 @@ export default function App() {
           <a href="#skills" className="hover:text-cyan-400 transition">
             Skills
           </a>
-          
+
           <a href="#certificates" className="hover:text-cyan-400 transition">
             Certificates
           </a>
@@ -279,39 +279,83 @@ export default function App() {
       </section>
 
       {/* Skills */}
-      <section
-        id="skills"
-        className="px-6 md:px-10 py-24"
+{/* Skills */}
+<section
+  id="skills"
+  className="px-6 md:px-10 py-24"
+>
+
+  <h2 className="text-5xl font-bold text-center text-cyan-400 mb-16">
+    Skills
+  </h2>
+
+  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+
+    {[
+      {
+        name: "Python",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      },
+      {
+        name: "React",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        name: "FastAPI",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+      },
+      {
+        name: "Machine Learning",
+        icon: "https://cdn-icons-png.flaticon.com/512/2103/2103832.png",
+      },
+      {
+        name: "Flask",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+      },
+      {
+        name: "SQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      },
+      {
+        name: "GitHub",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      },
+      {
+        name: "JavaScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "REST APIs",
+        icon: "https://cdn-icons-png.flaticon.com/512/2165/2165004.png",
+      },
+    ].map((skill, i) => (
+
+      <div
+        key={i}
+        className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-6 flex flex-col items-center justify-center text-center hover:-translate-y-3 hover:shadow-cyan-500/30 hover:shadow-2xl transition duration-500"
       >
 
-        <h2 className="text-5xl font-bold text-center text-cyan-400 mb-16">
-          Skills
-        </h2>
+        <img
+          src={skill.icon}
+          alt={skill.name}
+          className="w-16 h-16 mb-4 object-contain"
+        />
 
-        <div className="flex flex-wrap justify-center gap-5">
+        <h3 className="text-lg font-semibold text-cyan-300">
+          {skill.name}
+        </h3>
 
-          {[
-            "Python",
-            "React",
-            "FastAPI",
-            "Machine Learning",
-            "Flask",
-            "Tailwind CSS",
-            "SQL",
-            "GitHub",
-            "JavaScript",
-            "REST APIs",
-          ].map((skill, i) => (
-            <div
-              key={i}
-              className="px-6 py-3 rounded-2xl bg-cyan-500/10 border border-cyan-400/20 hover:bg-cyan-400 hover:text-black transition duration-300 hover:scale-110"
-            >
-              {skill}
-            </div>
-          ))}
+      </div>
 
-        </div>
-      </section>
+    ))}
+
+  </div>
+
+</section>
       {/* Certificates */}
 <section
   id="certificates"
@@ -404,72 +448,78 @@ export default function App() {
   id="education"
   className="px-6 md:px-10 py-24"
 >
+
   <h2 className="text-5xl font-bold text-center text-cyan-400 mb-16">
     Education
   </h2>
 
-  <div className="max-w-4xl mx-auto space-y-6">
+  <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-lg border border-white/10 p-10 rounded-3xl hover:shadow-cyan-500/30 hover:shadow-2xl transition duration-500">
 
-    <div className="bg-white/10 backdrop-blur-lg border border-white/10 p-8 rounded-3xl hover:shadow-cyan-500/20 hover:shadow-2xl transition">
-      <h3 className="text-2xl font-bold text-cyan-300">
-        B.Tech (Computer Science) speacilizing in AI/ML
-      </h3>
-      <p className="text-gray-300 mt-2">
-        UJALA SAROJ
-      </p>
-      <p className="text-gray-400 mt-1">
-        2023 - 2027 
-      </p>
-      <p className="text-gray-400 mt-1">
-        CGPA: 8.1 
-      </p>
-    </div>
+    <h3 className="text-3xl font-bold text-cyan-300 mb-4">
+      B.Tech in Computer Science
+    </h3>
+
+    <p className="text-gray-300 text-lg mb-3">
+      Specialization in Artificial Intelligence & Machine Learning
+    </p>
+
+    <p className="text-gray-400 mb-2">
+      2023 — 2027
+    </p>
+
+    <p className="text-gray-300 font-semibold">
+      CGPA: 8.1
+    </p>
 
   </div>
+
 </section>
           
 
+{/* Contact */}
+<section
+  id="contact"
+  className="px-6 md:px-10 py-24"
+>
 
-      {/* Contact */}
-      <section
-        id="contact"
-        className="px-6 md:px-10 py-24 text-center"
+  <h2 className="text-5xl font-bold text-center text-cyan-400 mb-16">
+    Contact
+  </h2>
+
+  <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-lg border border-white/10 p-10 rounded-3xl hover:shadow-cyan-500/20 hover:shadow-2xl transition duration-500 text-center">
+
+    <div className="flex flex-col items-center gap-6 text-xl">
+
+      <a
+        href="mailto:ujalasaroj9968@gmail.com"
+        className="hover:text-cyan-400 transition"
       >
+        📧 Email Me
+      </a>
 
-        <h2 className="text-5xl font-bold text-cyan-400 mb-16">
-          Contact
-        </h2>
+      <a
+        href="https://github.com/ujala9968"
+        target="_blank"
+        rel="noreferrer"
+        className="hover:text-cyan-400 transition"
+      >
+        💻 GitHub
+      </a>
 
-        <div className="flex flex-col items-center gap-5 text-xl">
+      <a
+        href="https://www.linkedin.com/in/ujala-saroj-9968s/"
+        target="_blank"
+        rel="noreferrer"
+        className="hover:text-cyan-400 transition"
+      >
+        🔗 LinkedIn
+      </a>
 
-          <a
-            href="mailto:ujalasaroj9968@gmail.com"
-            className="hover:text-cyan-400 transition"
-          >
-            📧 Email Me
-          </a>
+    </div>
 
-          <a
-            href="https://github.com/ujala9968"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-cyan-400 transition"
-          >
-            💻 GitHub
-          </a>
+  </div>
 
-          <a
-            href="https://www.linkedin.com/in/ujala-saroj-9968s/"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-cyan-400 transition"
-          >
-            🔗 LinkedIn
-          </a>
-
-        </div>
-
-      </section>
+</section>
 
       {/* Footer */}
       <footer className="border-t border-white/10 text-center py-8 text-gray-400">
