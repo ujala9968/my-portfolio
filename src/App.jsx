@@ -67,6 +67,7 @@ export default function App() {
           <a href="#skills" className="hover:text-cyan-400 transition">
             Skills
           </a>
+          
           <a href="#certificates" className="hover:text-cyan-400 transition">
             Certificates
           </a>
