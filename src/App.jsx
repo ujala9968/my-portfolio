@@ -264,7 +264,7 @@ export default function App() {
             </div>
 
             <a
-              href="https://github.com/ujala9968"
+              href="https://zentra-seven-tawny.vercel.app/"
               target="_blank"
               rel="noreferrer"
               className="text-cyan-400 hover:underline mt-auto"
