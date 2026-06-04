@@ -71,6 +71,9 @@ export default function App() {
           <a href="#certificates" className="hover:text-cyan-400 transition">
             Certificates
           </a>
+          <a href="#education" className="hover:text-cyan-400 transition">
+            Education
+          </a>
 
           <a href="#contact" className="hover:text-cyan-400 transition">
             Contact
@@ -129,8 +132,7 @@ export default function App() {
         </div>
 
       </section>
-      {/* About Section */ }
-{/* About */}
+      {/* About */}
 <section
   id="about"
   className="px-6 md:px-10 py-24"
@@ -139,96 +141,30 @@ export default function App() {
     About Me
   </h2>
 
-  <div className="max-w-5xl mx-auto">
+  <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-10 hover:shadow-cyan-500/20 hover:shadow-2xl transition duration-500">
 
-    <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-10 hover:shadow-cyan-500/20 hover:shadow-2xl transition duration-500">
+    <p className="text-lg text-gray-300 leading-9 text-center">
+      I'm <span className="text-cyan-400 font-semibold">Ujala Saroj</span>, an
+      aspiring Full Stack Developer and Computer Science & Engineering
+      (Artificial Intelligence & Machine Learning) student at
+      <span className="text-cyan-400">
+        {" "}Maharana Pratap Group of Institutions
+      </span>.
+      Passionate about building scalable web applications and solving
+      real-world problems through technology, I enjoy transforming ideas into
+      practical digital solutions that create meaningful impact.
+    </p>
 
-      <p className="text-xl text-gray-300 leading-relaxed text-center">
-        I'm{" "}
-        <span className="text-cyan-400 font-semibold">
-          Ujala Saroj
-        </span>
-        , a B.Tech student in
-        <span className="text-cyan-400">
-          {" "}Computer Science & Engineering (AI & ML)
-        </span>
-        {" "}at Maharana Pratap Group of Institutions.
-      </p>
-
-      <p className="text-lg text-gray-400 text-center mt-6 max-w-3xl mx-auto">
-        Passionate about Full Stack Development, Artificial Intelligence,
-        Machine Learning, and building scalable web applications that solve
-        real-world problems.
-      </p>
-
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-12">
-
-        <div className="bg-black/20 rounded-2xl p-5 text-center border border-cyan-500/20">
-          <h3 className="text-3xl font-bold text-cyan-400">
-            2027
-          </h3>
-          <p className="text-gray-400 mt-2">
-            Graduation
-          </p>
-        </div>
-
-        <div className="bg-black/20 rounded-2xl p-5 text-center border border-cyan-500/20">
-          <h3 className="text-3xl font-bold text-cyan-400">
-            8+
-          </h3>
-          <p className="text-gray-400 mt-2">
-            Certifications
-          </p>
-        </div>
-
-        <div className="bg-black/20 rounded-2xl p-5 text-center border border-cyan-500/20">
-          <h3 className="text-3xl font-bold text-cyan-400">
-            10+
-          </h3>
-          <p className="text-gray-400 mt-2">
-            Projects
-          </p>
-        </div>
-
-        <div className="bg-black/20 rounded-2xl p-5 text-center border border-cyan-500/20">
-          <h3 className="text-3xl font-bold text-cyan-400">
-            500+
-          </h3>
-          <p className="text-gray-400 mt-2">
-            DSA Problems
-          </p>
-        </div>
-
-      </div>
-
-      <div className="mt-10 flex flex-wrap justify-center gap-3">
-
-        {[
-          "React.js",
-          "JavaScript",
-          "FastAPI",
-          "Flask",
-          "SQL",
-          "C++",
-          "Machine Learning",
-          "REST APIs",
-          "Tailwind CSS",
-        ].map((skill) => (
-          <span
-            key={skill}
-            className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300"
-          >
-            {skill}
-          </span>
-        ))}
-
-      </div>
-
-    </div>
+    <p className="text-lg text-gray-300 leading-9 text-center mt-6">
+      With a strong foundation in Data Structures and Algorithms, I am
+      continuously enhancing my expertise in modern web development and
+      software engineering. My interests span full-stack development,
+      intelligent systems, and creating seamless user experiences backed by
+      efficient and reliable architectures.
+    </p>
 
   </div>
 </section>
-
 
 
       {/* Projects */}
