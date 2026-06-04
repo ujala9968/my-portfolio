@@ -474,6 +474,12 @@ export default function App() {
     <p className="text-gray-300 text-lg mb-3">
       Specialization in Artificial Intelligence & Machine Learning
     </p>
+    <p className="text-cyan-400 text-xl font-semibold">
+  Maharana Pratap Group of Institutions (MPGI)
+</p>
+<p className="text-gray-400">
+  Kanpur, Uttar Pradesh
+</p>
 
     <p className="text-gray-400 mb-2">
       2023 — 2027
