@@ -129,31 +129,35 @@ export default function App() {
         </div>
 
       </section>
+      <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
+  <p>
+    Hi, I'm <span className="text-cyan-400 font-semibold">Ujala Saroj</span>,
+    a B.Tech student in Computer Science & Engineering (Artificial Intelligence
+    & Machine Learning) at Maharana Pratap Group of Institutions (MPGI),
+    passionate about building scalable web applications and solving real-world
+    problems through technology.
+  </p>
 
-      {/* About */}
-      <section
-        id="about"
-        className="px-6 md:px-10 py-24"
-      >
+  <p>
+    My technical expertise includes C++, JavaScript, React.js, SQL, REST APIs,
+    and modern web development practices. I have a strong foundation in Data
+    Structures and Algorithms and enjoy developing efficient, user-focused
+    solutions.
+  </p>
 
-        <h2 className="text-5xl font-bold text-center text-cyan-400 mb-16">
-          About Me
-        </h2>
+  <p>
+    I continuously enhance my skills through industry-recognized certifications
+    and actively work on full-stack projects while strengthening my
+    problem-solving abilities through DSA practice.
+  </p>
 
-        <div className="max-w-5xl mx-auto bg-white/10 backdrop-blur-lg border border-white/10 p-10 rounded-3xl hover:shadow-cyan-500/20 hover:shadow-2xl transition duration-500">
+  <p>
+    Currently, I'm exploring AI/ML technologies and building impactful
+    applications that combine modern web development with intelligent systems.
+  </p>
+</div>
 
-          <p className="text-lg text-gray-300 leading-relaxed">
 
-            I enjoy building AI-powered systems,
-            scalable APIs and modern frontend experiences.
-            My interests include Machine Learning,
-            FastAPI, React.js and software engineering.
-
-          </p>
-
-        </div>
-
-      </section>
 
       {/* Projects */}
       <section
