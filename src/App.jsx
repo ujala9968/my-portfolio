@@ -130,7 +130,7 @@ export default function App() {
 
       </section>
       {/* About Section */ }
-      {/* About Section */}
+{/* About */}
 <section
   id="about"
   className="px-6 md:px-10 py-24"
@@ -139,99 +139,89 @@ export default function App() {
     About Me
   </h2>
 
-  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+  <div className="max-w-5xl mx-auto">
 
-    {/* Left Side */}
-    <div className="bg-white/5 backdrop-blur-lg border border-cyan-500/20 rounded-3xl p-8 shadow-lg shadow-cyan-500/10">
+    <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-10 hover:shadow-cyan-500/20 hover:shadow-2xl transition duration-500">
 
-      <p className="text-gray-300 text-lg leading-8">
-        Hi, I'm{" "}
+      <p className="text-xl text-gray-300 leading-relaxed text-center">
+        I'm{" "}
         <span className="text-cyan-400 font-semibold">
           Ujala Saroj
         </span>
-        , a passionate B.Tech student pursuing
+        , a B.Tech student in
         <span className="text-cyan-400">
-          {" "}Computer Science & Engineering (Artificial Intelligence & Machine Learning)
-        </span>{" "}
-        at Maharana Pratap Group of Institutions (MPGI).
-      </p>
-
-      <p className="mt-5 text-gray-300 text-lg leading-8">
-        I enjoy building scalable and user-friendly web applications while
-        solving real-world problems through technology. My primary focus is
-        full-stack development, where I combine modern frontend experiences
-        with efficient backend systems.
-      </p>
-
-      <p className="mt-5 text-gray-300 text-lg leading-8">
-        My technical stack includes
-        <span className="text-cyan-400">
-          {" "}React.js, JavaScript, C++, SQL, FastAPI, Flask,
-          REST APIs, Git, and Tailwind CSS
-        </span>.
-        I also have a strong foundation in
-        <span className="text-cyan-400">
-          {" "}Data Structures & Algorithms
+          {" "}Computer Science & Engineering (AI & ML)
         </span>
-        and continuously improve my problem-solving skills through coding
-        challenges and projects.
+        {" "}at Maharana Pratap Group of Institutions.
       </p>
 
-      <p className="mt-5 text-gray-300 text-lg leading-8">
-        Alongside development, I actively explore
-        <span className="text-cyan-400">
-          {" "}Artificial Intelligence and Machine Learning
-        </span>
-        to create impactful solutions that blend intelligent systems with
-        modern web technologies.
+      <p className="text-lg text-gray-400 text-center mt-6 max-w-3xl mx-auto">
+        Passionate about Full Stack Development, Artificial Intelligence,
+        Machine Learning, and building scalable web applications that solve
+        real-world problems.
       </p>
 
-    </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-12">
 
-    {/* Right Side */}
-    <div className="grid gap-5">
+        <div className="bg-black/20 rounded-2xl p-5 text-center border border-cyan-500/20">
+          <h3 className="text-3xl font-bold text-cyan-400">
+            2027
+          </h3>
+          <p className="text-gray-400 mt-2">
+            Graduation
+          </p>
+        </div>
 
-      <div className="bg-white/5 border border-cyan-500/20 rounded-2xl p-6">
-        <h3 className="text-cyan-400 text-xl font-semibold mb-2">
-          🎓 Education
-        </h3>
-        <p className="text-gray-300">
-          B.Tech CSE (AI & ML)
-        </p>
-        <p className="text-gray-400 text-sm">
-          Maharana Pratap Group of Institutions
-        </p>
-        <p className="text-gray-400 text-sm">
-          2023 – 2027
-        </p>
+        <div className="bg-black/20 rounded-2xl p-5 text-center border border-cyan-500/20">
+          <h3 className="text-3xl font-bold text-cyan-400">
+            8+
+          </h3>
+          <p className="text-gray-400 mt-2">
+            Certifications
+          </p>
+        </div>
+
+        <div className="bg-black/20 rounded-2xl p-5 text-center border border-cyan-500/20">
+          <h3 className="text-3xl font-bold text-cyan-400">
+            10+
+          </h3>
+          <p className="text-gray-400 mt-2">
+            Projects
+          </p>
+        </div>
+
+        <div className="bg-black/20 rounded-2xl p-5 text-center border border-cyan-500/20">
+          <h3 className="text-3xl font-bold text-cyan-400">
+            500+
+          </h3>
+          <p className="text-gray-400 mt-2">
+            DSA Problems
+          </p>
+        </div>
+
       </div>
 
-      <div className="bg-white/5 border border-cyan-500/20 rounded-2xl p-6">
-        <h3 className="text-cyan-400 text-xl font-semibold mb-2">
-          💻 Skills
-        </h3>
-        <p className="text-gray-300">
-          React.js • JavaScript • C++ • SQL • FastAPI • Flask • Tailwind CSS • Git
-        </p>
-      </div>
+      <div className="mt-10 flex flex-wrap justify-center gap-3">
 
-      <div className="bg-white/5 border border-cyan-500/20 rounded-2xl p-6">
-        <h3 className="text-cyan-400 text-xl font-semibold mb-2">
-          📜 Certifications
-        </h3>
-        <p className="text-gray-300">
-          NPTEL • Google • IBM • EXCELR • Postman • TCS iON
-        </p>
-      </div>
+        {[
+          "React.js",
+          "JavaScript",
+          "FastAPI",
+          "Flask",
+          "SQL",
+          "C++",
+          "Machine Learning",
+          "REST APIs",
+          "Tailwind CSS",
+        ].map((skill) => (
+          <span
+            key={skill}
+            className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300"
+          >
+            {skill}
+          </span>
+        ))}
 
-      <div className="bg-white/5 border border-cyan-500/20 rounded-2xl p-6">
-        <h3 className="text-cyan-400 text-xl font-semibold mb-2">
-          🚀 Interests
-        </h3>
-        <p className="text-gray-300">
-          Full Stack Development, AI/ML, Open Source,
-          Problem Solving & Software Engineering
-        </p>
       </div>
 
     </div>
