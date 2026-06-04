@@ -559,6 +559,22 @@ export default function App() {
         Connect with me
       </p>
     </a>
+    <a
+  href="https://leetcode.com/u/ujala68/"
+  target="_blank"
+  rel="noreferrer"
+  className="group bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-8 hover:border-cyan-400 hover:shadow-cyan-500/20 hover:shadow-2xl transition duration-300"
+>
+  <div className="text-4xl mb-4">🧩</div>
+
+  <h3 className="text-xl font-semibold text-white group-hover:text-cyan-400">
+    LeetCode
+  </h3>
+
+  <p className="text-gray-400 mt-2">
+    View My Profile
+  </p>
+</a>
 
   </div>
 </section>
