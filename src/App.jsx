@@ -486,52 +486,79 @@ export default function App() {
   </div>
 
 </section>
-          
-
-{/* Contact */}
+    {/* Contact */}
 <section
   id="contact"
   className="px-6 md:px-10 py-24"
 >
-
-  <h2 className="text-5xl font-bold text-center text-cyan-400 mb-16">
-    Contact
+  <h2 className="text-5xl font-bold text-center text-cyan-400 mb-6">
+    Contact Me
   </h2>
 
-  <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-lg border border-white/10 p-10 rounded-3xl hover:shadow-cyan-500/20 hover:shadow-2xl transition duration-500 text-center">
+  <p className="text-center text-gray-400 max-w-2xl mx-auto mb-16">
+    I'm currently open to internships, freelance opportunities, and exciting
+    collaborations. Feel free to reach out through any of the platforms below.
+  </p>
 
-    <div className="flex flex-col items-center gap-6 text-xl">
+  <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
 
-      <a
-        href="mailto:ujalasaroj9968@gmail.com"
-        className="hover:text-cyan-400 transition"
-      >
-        📧 Email Me
-      </a>
+    {/* Email */}
+    <a
+      href="mailto:ujalasaroj9968@gmail.com"
+      className="group bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-8 hover:border-cyan-400 hover:shadow-cyan-500/20 hover:shadow-2xl transition duration-300"
+    >
+      <div className="text-4xl mb-4">📧</div>
 
-      <a
-        href="https://github.com/ujala9968"
-        target="_blank"
-        rel="noreferrer"
-        className="hover:text-cyan-400 transition"
-      >
-        💻 GitHub
-      </a>
+      <h3 className="text-xl font-semibold text-white group-hover:text-cyan-400">
+        Email
+      </h3>
 
-      <a
-        href="https://www.linkedin.com/in/ujala-saroj-9968s/"
-        target="_blank"
-        rel="noreferrer"
-        className="hover:text-cyan-400 transition"
-      >
-        🔗 LinkedIn
-      </a>
+      <p className="text-gray-400 mt-2 break-all">
+        ujalasaroj9968@gmail.com
+      </p>
+    </a>
 
-    </div>
+    {/* GitHub */}
+    <a
+      href="https://github.com/ujala9968"
+      target="_blank"
+      rel="noreferrer"
+      className="group bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-8 hover:border-cyan-400 hover:shadow-cyan-500/20 hover:shadow-2xl transition duration-300"
+    >
+      <div className="text-4xl mb-4">💻</div>
+
+      <h3 className="text-xl font-semibold text-white group-hover:text-cyan-400">
+        GitHub
+      </h3>
+
+      <p className="text-gray-400 mt-2">
+        github.com/ujala9968
+      </p>
+    </a>
+
+    {/* LinkedIn */}
+    <a
+      href="https://www.linkedin.com/in/ujala-saroj-9968s/"
+      target="_blank"
+      rel="noreferrer"
+      className="group bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-8 hover:border-cyan-400 hover:shadow-cyan-500/20 hover:shadow-2xl transition duration-300"
+    >
+      <div className="text-4xl mb-4">🔗</div>
+
+      <h3 className="text-xl font-semibold text-white group-hover:text-cyan-400">
+        LinkedIn
+      </h3>
+
+      <p className="text-gray-400 mt-2">
+        Connect with me
+      </p>
+    </a>
 
   </div>
-
 </section>
+          
+
+
 
       {/* Footer */}
       <footer className="border-t border-white/10 text-center py-8 text-gray-400">
