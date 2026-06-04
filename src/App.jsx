@@ -129,33 +129,115 @@ export default function App() {
         </div>
 
       </section>
-      <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
-  <p>
-    Hi, I'm <span className="text-cyan-400 font-semibold">Ujala Saroj</span>,
-    a B.Tech student in Computer Science & Engineering (Artificial Intelligence
-    & Machine Learning) at Maharana Pratap Group of Institutions (MPGI),
-    passionate about building scalable web applications and solving real-world
-    problems through technology.
-  </p>
+      {/* About Section */ }
+      {/* About Section */}
+<section
+  id="about"
+  className="px-6 md:px-10 py-24"
+>
+  <h2 className="text-5xl font-bold text-center text-cyan-400 mb-16">
+    About Me
+  </h2>
 
-  <p>
-    My technical expertise includes C++, JavaScript, React.js, SQL, REST APIs,
-    and modern web development practices. I have a strong foundation in Data
-    Structures and Algorithms and enjoy developing efficient, user-focused
-    solutions.
-  </p>
+  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
-  <p>
-    I continuously enhance my skills through industry-recognized certifications
-    and actively work on full-stack projects while strengthening my
-    problem-solving abilities through DSA practice.
-  </p>
+    {/* Left Side */}
+    <div className="bg-white/5 backdrop-blur-lg border border-cyan-500/20 rounded-3xl p-8 shadow-lg shadow-cyan-500/10">
 
-  <p>
-    Currently, I'm exploring AI/ML technologies and building impactful
-    applications that combine modern web development with intelligent systems.
-  </p>
-</div>
+      <p className="text-gray-300 text-lg leading-8">
+        Hi, I'm{" "}
+        <span className="text-cyan-400 font-semibold">
+          Ujala Saroj
+        </span>
+        , a passionate B.Tech student pursuing
+        <span className="text-cyan-400">
+          {" "}Computer Science & Engineering (Artificial Intelligence & Machine Learning)
+        </span>{" "}
+        at Maharana Pratap Group of Institutions (MPGI).
+      </p>
+
+      <p className="mt-5 text-gray-300 text-lg leading-8">
+        I enjoy building scalable and user-friendly web applications while
+        solving real-world problems through technology. My primary focus is
+        full-stack development, where I combine modern frontend experiences
+        with efficient backend systems.
+      </p>
+
+      <p className="mt-5 text-gray-300 text-lg leading-8">
+        My technical stack includes
+        <span className="text-cyan-400">
+          {" "}React.js, JavaScript, C++, SQL, FastAPI, Flask,
+          REST APIs, Git, and Tailwind CSS
+        </span>.
+        I also have a strong foundation in
+        <span className="text-cyan-400">
+          {" "}Data Structures & Algorithms
+        </span>
+        and continuously improve my problem-solving skills through coding
+        challenges and projects.
+      </p>
+
+      <p className="mt-5 text-gray-300 text-lg leading-8">
+        Alongside development, I actively explore
+        <span className="text-cyan-400">
+          {" "}Artificial Intelligence and Machine Learning
+        </span>
+        to create impactful solutions that blend intelligent systems with
+        modern web technologies.
+      </p>
+
+    </div>
+
+    {/* Right Side */}
+    <div className="grid gap-5">
+
+      <div className="bg-white/5 border border-cyan-500/20 rounded-2xl p-6">
+        <h3 className="text-cyan-400 text-xl font-semibold mb-2">
+          🎓 Education
+        </h3>
+        <p className="text-gray-300">
+          B.Tech CSE (AI & ML)
+        </p>
+        <p className="text-gray-400 text-sm">
+          Maharana Pratap Group of Institutions
+        </p>
+        <p className="text-gray-400 text-sm">
+          2023 – 2027
+        </p>
+      </div>
+
+      <div className="bg-white/5 border border-cyan-500/20 rounded-2xl p-6">
+        <h3 className="text-cyan-400 text-xl font-semibold mb-2">
+          💻 Skills
+        </h3>
+        <p className="text-gray-300">
+          React.js • JavaScript • C++ • SQL • FastAPI • Flask • Tailwind CSS • Git
+        </p>
+      </div>
+
+      <div className="bg-white/5 border border-cyan-500/20 rounded-2xl p-6">
+        <h3 className="text-cyan-400 text-xl font-semibold mb-2">
+          📜 Certifications
+        </h3>
+        <p className="text-gray-300">
+          NPTEL • Google • IBM • EXCELR • Postman • TCS iON
+        </p>
+      </div>
+
+      <div className="bg-white/5 border border-cyan-500/20 rounded-2xl p-6">
+        <h3 className="text-cyan-400 text-xl font-semibold mb-2">
+          🚀 Interests
+        </h3>
+        <p className="text-gray-300">
+          Full Stack Development, AI/ML, Open Source,
+          Problem Solving & Software Engineering
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
 
 
