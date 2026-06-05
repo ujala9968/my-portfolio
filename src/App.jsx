@@ -155,14 +155,6 @@ export default function App() {
       practical digital solutions that create meaningful impact.
     </p>
 
-    <p className="text-lg text-gray-300 leading-9 text-center mt-6">
-      With a strong foundation in Data Structures and Algorithms, I am
-      continuously enhancing my expertise in modern web development and
-      software engineering. My interests span full-stack development,
-      intelligent systems, and creating seamless user experiences backed by
-      efficient and reliable architectures.
-    </p>
-
   </div>
 </section>
 
