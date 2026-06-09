@@ -577,7 +577,7 @@ export default function App() {
       {/* Footer */}
       <footer className="border-t border-white/10 text-center py-8 text-gray-400">
 
-        © 2026 Ujala Saroj • <FSD>Full Stack Developer</FSD> Portfolio
+        © 2026 Ujala Saroj • Full Stack Developer Portfolio
 
       </footer>
 
